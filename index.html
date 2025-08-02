@@ -8,42 +8,52 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0d0d0d;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
             color: white;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         header {
-            padding: 20px;
-            background-color: #1a1a1a;
+            padding: 50px 20px 20px;
+            animation: fadeIn 2s ease-in-out;
         }
         header img {
-            max-width: 200px;
+            max-width: 250px;
+            animation: zoomIn 1.5s ease-in-out;
         }
         h1 {
             font-size: 2rem;
-            margin-top: 10px;
+            margin-top: 20px;
+            color: #d8c5b0;
+            animation: fadeInUp 2s ease-in-out;
         }
         .twitter-button {
             display: inline-block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #1DA1F2;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #8b5cf6;
             color: white;
-            border-radius: 25px;
+            border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 2.5s ease-in-out;
         }
         .twitter-button:hover {
-            background-color: #0d8ddb;
+            background-color: #6d28d9;
         }
         footer {
             margin-top: 40px;
             padding: 20px;
             font-size: 0.9rem;
-            color: #ccc;
+            color: #aaa;
+            animation: fadeIn 3s ease-in-out;
         }
+        @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+        @keyframes fadeInUp { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
+        @keyframes zoomIn { from {transform: scale(0.8); opacity: 0;} to {transform: scale(1); opacity: 1;} }
     </style>
 </head>
 <body>
